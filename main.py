@@ -7,8 +7,11 @@ def calculate_factorial(n):
         return None  # Factorial is not defined for negative numbers
     
     # TODO: 1. Initialize a variable (e.g., result = 1)
+    result = 1
     
     # TODO: 2. Write a loop to multiply the numbers from 1 to n
+    for i in range(1, n + 1):
+        result *= i  # Multiply each number from 1 to n
     
     # TODO: 3. Return the result
     return 0
