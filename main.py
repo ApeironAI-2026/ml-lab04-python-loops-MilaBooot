@@ -6,12 +6,13 @@ def calculate_factorial(n):
     if n < 0:
         return None  # Factorial is not defined for negative numbers
     
-    # TODO: 1. Initialize a variable (e.g., result = 1)
+    # Initialize result to 1
     result = 1
     
-    # TODO: 2. Write a loop to multiply the numbers from 1 to n
+    # Loop from 1 to n (inclusive)
+    # Handle the special case of n=0 (loop won't execute, result stays 1)
     for i in range(1, n + 1):
-        result *= i  # Multiply each number from 1 to n
+        result = result * i
     
-    # TODO: 3. Return the result
-    return 0
+    # Return the calculated factorial
+    return result
